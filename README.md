@@ -1,1 +1,116 @@
-# ultah
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Happy Birthday Aulia</title>
+    <style type="text/css">
+      .container-fluid {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  min-height: 120vh;
+  display: inline-block;
+}
+.happy {
+  margin-top: 14%;
+  margin-bottom: 14%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 80px;
+}
+#lihat {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  margin-top: -120px;
+}
+#lihat:hover {
+  color: black;
+  border: 2px solid black;
+}
+div.card {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Add Typewriter -->
+    <div class="container-fluid">
+      <div class="happy">
+        <div id="app"></div><br>
+        <a id="lihat" class="btn" href="#ucapan">Lihat Ucapan!</a>
+      </div>
+      <div id="ucapan" class="cardouter row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">"Selamat ulang tahun sayang! Semoga di usia 20 tahun ini, segala urusan yang sedang kamu hadapi lancar semua"</h5>
+              <p class="card-text">- </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">"Jangan sering begadang lagi ya sayang, apalagi sambil makan sambil nonton. Tetap jaga kesehatanmu dengan baik"</h5>
+              <p class="card-text">- </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">"Aku yakin kita bisa melewati semua masalah yang akan datang seiring berjalannya waktu."</h5>
+              <p class="card-text">- </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">"Semoga yang terbaik selalu untukmu, sayang. Love you, babe! 🤍"</h5>
+              <p class="card-text">-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+    <!-- Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script type="text/javascript">
+      var app = document.getElementById('app');
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
+
+      typewriter
+        .pauseFor(2500)
+        .typeString('Hai Aulia!')
+        .pauseFor(300)
+        .deleteChars(30)
+        .typeString('Happy Birthday!')
+        .deleteChars(30)
+        .typeString('Semoga Sehat Selalu!')
+        .pauseFor(1000)
+        .start();
+    </script>
+  </body>
+</html>
